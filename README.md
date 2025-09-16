@@ -81,11 +81,14 @@ Add this to your Claude Desktop (or other MCP client) configuration:
 
 ```
 linux-mcp-server/
-├── linux_mcp_server_whitelist.py     # MCP server with
-├── linux_mcp_server_unrestricted.py  # MCP server without 
-├── requirements.txt                  # Dependencies
-├── .gitignore                        # Ignore venv, cache, etc.
+├── linux_mcp_server_whitelist.py     # MCP server with command whitelist
+├── linux_mcp_server_unrestricted.py  # MCP server without restrictions
+├── pyproject.toml                    # Project metadata for uv
+├── uv.lock                           # Dependency lockfile
+├── .gitignore                        # Ignore venv, cache, IDE files
+├── .python-version                   # Python version file
 └── README.md                         # Documentation
+
 ```
 
 ---
